@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointAddActivity">
+
+    <ImageButton
+        android:id="@+id/backbtn5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/back_background"
+        android:backgroundTint="@color/back_background"
+        android:scaleType="fitXY"
+        android:src="@mipmap/back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/backbtn5"
+        android:background="@color/back_background"
+        android:padding="5dp"
+        android:text="Appointment"
+        android:textAllCaps="true"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_below="@id/backbtn5"
+        android:text="Doctor's name : " />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backbtn5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText11"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Hospital/clinic name: " />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText11"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView12"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Date : "
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView12"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/calbutton"/>
+
+    <ImageButton
+        android:id="@+id/calbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView12"
+        android:layout_toRightOf="@id/textView13"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/calender"
+        android:backgroundTint="@color/calender_background" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView14"
+        android:text="Time : "
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/alarmbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView14"
+        android:layout_toRightOf="@id/textView15"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/alarm"
+        android:backgroundTint="@color/alarm_background"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView14"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/alarmbutton"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/check_background"
+        android:background="@color/check_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40dp"
+        android:src="@mipmap/check"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo" />
+
+</RelativeLayout>

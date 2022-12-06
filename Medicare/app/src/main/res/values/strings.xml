@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Medicare</string>
+    <string name="medicine">Medicine</string>
+    <string name="appoint">Appointment</string>
+    <string name="prescribe">Prescription</string>
+    <string name="reports">Reports</string>
+    <string name="map">Medical store and hospitals near me</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="medicine_name">Medicine name:</string>
+    <string name="todo">TODO</string>
+</resources>
